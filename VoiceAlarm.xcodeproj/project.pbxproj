@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileReference section */
+		2000000000000000000000B1 /* VoiceAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3000000000000000000000C1 /* VoiceAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4000000000000000000000D1 /* VoiceAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2000000000000000000000BF /* Exceptions for "VoiceAlarm" folder in "VoiceAlarm" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2000000000000000000000B0 /* VoiceAlarm */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2000000000000000000000B2 /* VoiceAlarm */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2000000000000000000000BF /* Exceptions for "VoiceAlarm" folder in "VoiceAlarm" target */, ); path = VoiceAlarm; sourceTree = "<group>"; };
+		3000000000000000000000C2 /* VoiceAlarmTests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = VoiceAlarmTests; sourceTree = "<group>"; };
+		4000000000000000000000D2 /* VoiceAlarmUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = VoiceAlarmUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2000000000000000000000B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3000000000000000000000C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4000000000000000000000D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1000000000000000000000A0 = {
+			isa = PBXGroup;
+			children = (
+				2000000000000000000000B2 /* VoiceAlarm */,
+				3000000000000000000000C2 /* VoiceAlarmTests */,
+				4000000000000000000000D2 /* VoiceAlarmUITests */,
+				1000000000000000000000A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1000000000000000000000A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2000000000000000000000B1 /* VoiceAlarm.app */,
+				3000000000000000000000C1 /* VoiceAlarmTests.xctest */,
+				4000000000000000000000D1 /* VoiceAlarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2000000000000000000000B0 /* VoiceAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2000000000000000000000B6 /* Build configuration list for PBXNativeTarget "VoiceAlarm" */;
+			buildPhases = (
+				2000000000000000000000B3 /* Sources */,
+				2000000000000000000000B4 /* Frameworks */,
+				2000000000000000000000B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2000000000000000000000B2 /* VoiceAlarm */,
+			);
+			name = VoiceAlarm;
+			productName = VoiceAlarm;
+			productReference = 2000000000000000000000B1 /* VoiceAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3000000000000000000000C0 /* VoiceAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3000000000000000000000C6 /* Build configuration list for PBXNativeTarget "VoiceAlarmTests" */;
+			buildPhases = (
+				3000000000000000000000C3 /* Sources */,
+				3000000000000000000000C4 /* Frameworks */,
+				3000000000000000000000C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3000000000000000000000C9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3000000000000000000000C2 /* VoiceAlarmTests */,
+			);
+			name = VoiceAlarmTests;
+			productName = VoiceAlarmTests;
+			productReference = 3000000000000000000000C1 /* VoiceAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4000000000000000000000D0 /* VoiceAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4000000000000000000000D6 /* Build configuration list for PBXNativeTarget "VoiceAlarmUITests" */;
+			buildPhases = (
+				4000000000000000000000D3 /* Sources */,
+				4000000000000000000000D4 /* Frameworks */,
+				4000000000000000000000D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4000000000000000000000D9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4000000000000000000000D2 /* VoiceAlarmUITests */,
+			);
+			name = VoiceAlarmUITests;
+			productName = VoiceAlarmUITests;
+			productReference = 4000000000000000000000D1 /* VoiceAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1000000000000000000000A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2000000000000000000000B0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3000000000000000000000C0 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2000000000000000000000B0;
+					};
+					4000000000000000000000D0 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2000000000000000000000B0;
+					};
+				};
+			};
+			buildConfigurationList = 1000000000000000000000A3 /* Build configuration list for PBXProject "VoiceAlarm" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1000000000000000000000A0;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 1000000000000000000000A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2000000000000000000000B0 /* VoiceAlarm */,
+				3000000000000000000000C0 /* VoiceAlarmTests */,
+				4000000000000000000000D0 /* VoiceAlarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2000000000000000000000B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3000000000000000000000C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4000000000000000000000D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2000000000000000000000B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3000000000000000000000C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4000000000000000000000D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3000000000000000000000C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2000000000000000000000B0 /* VoiceAlarm */;
+			targetProxy = 3000000000000000000000CA /* PBXContainerItemProxy */;
+		};
+		4000000000000000000000D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2000000000000000000000B0 /* VoiceAlarm */;
+			targetProxy = 4000000000000000000000DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		3000000000000000000000CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1000000000000000000000A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2000000000000000000000B0;
+			remoteInfo = VoiceAlarm;
+		};
+		4000000000000000000000DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1000000000000000000000A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2000000000000000000000B0;
+			remoteInfo = VoiceAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		1000000000000000000000A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1000000000000000000000A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2000000000000000000000B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VoiceAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2000000000000000000000B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VoiceAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3000000000000000000000C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceAlarm";
+			};
+			name = Debug;
+		};
+		3000000000000000000000C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceAlarm";
+			};
+			name = Release;
+		};
+		4000000000000000000000D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceAlarm;
+			};
+			name = Debug;
+		};
+		4000000000000000000000D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicealarm.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceAlarm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1000000000000000000000A3 /* Build configuration list for PBXProject "VoiceAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1000000000000000000000A4 /* Debug */,
+				1000000000000000000000A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2000000000000000000000B6 /* Build configuration list for PBXNativeTarget "VoiceAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2000000000000000000000B7 /* Debug */,
+				2000000000000000000000B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3000000000000000000000C6 /* Build configuration list for PBXNativeTarget "VoiceAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3000000000000000000000C7 /* Debug */,
+				3000000000000000000000C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4000000000000000000000D6 /* Build configuration list for PBXNativeTarget "VoiceAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4000000000000000000000D7 /* Debug */,
+				4000000000000000000000D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1000000000000000000000A2 /* Project object */;
+}

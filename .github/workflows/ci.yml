@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Primary job: build + test using the committed Xcode project, exactly as a
+  # developer opening VoiceAlarm.xcodeproj would.
+  test:
+    name: Build & Test (committed project)
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Show versions
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Pick an available iOS Simulator
+        id: sim
+        run: |
+          SIM_ID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; ids=[x['udid'] for k in d for x in d[k] if x.get('isAvailable') and 'iPhone' in x.get('name','')]; print(ids[0] if ids else '')")
+          if [ -z "$SIM_ID" ]; then echo "No iPhone simulator available" >&2; exit 1; fi
+          echo "id=$SIM_ID" >> "$GITHUB_OUTPUT"
+          echo "Using simulator $SIM_ID"
+
+      - name: Run tests
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project VoiceAlarm.xcodeproj \
+            -scheme VoiceAlarm \
+            -destination "id=${{ steps.sim.outputs.id }}" \
+            -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestResults
+          path: TestResults.xcresult
+          if-no-files-found: ignore
+
+  # Safety-net job: regenerate the project from project.yml with XcodeGen and run
+  # the same tests. Guarantees the project definition stays buildable even if the
+  # committed .pbxproj is ever hand-edited.
+  test-xcodegen:
+    name: Build & Test (XcodeGen regen)
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Regenerate project
+        run: |
+          rm -rf VoiceAlarm.xcodeproj
+          xcodegen generate
+
+      - name: Pick an available iOS Simulator
+        id: sim
+        run: |
+          SIM_ID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; ids=[x['udid'] for k in d for x in d[k] if x.get('isAvailable') and 'iPhone' in x.get('name','')]; print(ids[0] if ids else '')")
+          if [ -z "$SIM_ID" ]; then echo "No iPhone simulator available" >&2; exit 1; fi
+          echo "id=$SIM_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Run tests
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project VoiceAlarm.xcodeproj \
+            -scheme VoiceAlarm \
+            -destination "id=${{ steps.sim.outputs.id }}" \
+            CODE_SIGNING_ALLOWED=NO
