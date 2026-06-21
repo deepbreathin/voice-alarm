@@ -57,6 +57,19 @@ select the *VoiceAlarm* target → *Signing & Capabilities* → pick your Apple 
 team. (Notifications and microphone work fully only on a real device or a
 simulator; alarm *sounds* are best verified on a real device.)
 
+### Sharing it with someone / installing on an iPhone
+
+- **[`docs/INSTALL.md`](docs/INSTALL.md)** — how to install on an iPhone without
+  the App Store: build from source in Xcode (free), sideload a prebuilt `.ipa`
+  with Sideloadly/AltStore (Windows or Mac, free), or TestFlight (paid account).
+- **[`docs/VERIFY-SAFETY.md`](docs/VERIFY-SAFETY.md)** — confirm the app is safe
+  in minutes, including a copy-paste prompt to have Claude audit it. (Short
+  version: it has **no networking and no third-party code** — nothing leaves the
+  device.)
+
+To produce a shareable build, run the **Build IPA** workflow from the repo's
+Actions tab (or push a `v*` tag to publish it as a Release).
+
 ### If the project won't open
 
 The committed `VoiceAlarm.xcodeproj` is generated from
