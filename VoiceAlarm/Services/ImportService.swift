@@ -34,7 +34,14 @@ public struct ImportService {
     /// Derives a display title from a file name (strips extension, tidies it).
     /// Pure and testable.
     public static func displayTitle(from originalName: String) -> String {
-        let base = (originalName as NSString).deletingPathExtension
+        let ns = originalName as NSString
+        var base = ns.deletingPathExtension
+        // A dotfile-style name like ".m4a" has no real title — `deletingPathExtension`
+        // leaves it intact (the leading dot makes it look extension-less), so treat
+        // that case as nameless and fall back below.
+        if base == originalName, originalName.hasPrefix(".") {
+            base = ""
+        }
         let cleaned = base
             .replacingOccurrences(of: "_", with: " ")
             .replacingOccurrences(of: "-", with: " ")
